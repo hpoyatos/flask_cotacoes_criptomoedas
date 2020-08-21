@@ -7,7 +7,7 @@ import locale
 from datetime import datetime, timedelta
 
 @app.route('/')
-def cotacoes_cripto():
+def main():
     locale.setlocale(locale.LC_ALL, "pt_BR.UTF-8")
 
     r = requests.get('https://api.bitcointrade.com.br/v3/public/BRLBTC/ticker')
